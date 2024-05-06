@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    background-color: #41C9E2;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 68px;
+    max-height: 100vh;
+}
+
+.profile-card {
+    width: 100%;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    background-image: url('img/diego.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 20px; 
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-size: 14px;
+    color: #35374B;
+}
+
+.div-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.div-container2 div {
+    background-color: #DFF5FF;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px; 
+    text-align: justify;
+    height: auto;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.texto li, .texto2 li, .texto3 li {
+    margin-bottom: 5px; 
+    text-align: left;
+    max-width: calc(100% - 20px); 
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin-top: -7px;
+    color: black;
+}
+
+.ultimo {
+    text-align: center; 
+    padding: 20px;
+    width: calc(92%);
+    background-color: #41C9E2; 
+    border-radius: 10px;
+}
+
+.ultimo h1, .ultimo li {
+    margin-bottom: 10px; 
+}
+
+.ultimo img {
+    width: 20px;
+    height: 20px;
+    padding: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; 
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px; 
+        margin-bottom: 10px;
+        margin-top: -70px;
+    }
+
+    .div-container2 {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .div-container2 {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
